@@ -109,7 +109,6 @@ describe('KaraokeLyric', () => {
       position: 'absolute',
       left: 0,
       top: 0,
-      color: 'blue',
       overflow: 'hidden',
       zIndex: 1,
       width: '80%',

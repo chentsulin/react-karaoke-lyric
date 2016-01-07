@@ -34,7 +34,10 @@
     "index.js"
   ],
   "keywords": [
-    ""
+    "karaoke",
+    "lyric",
+    "react",
+    "react-component"
   ],
   "devDependencies": {
     "babel": "^5.8.21",
