@@ -35,15 +35,16 @@ describe('KaraokeLyric', () => {
     expect(defaultLyric.props.children).to.equal('Test');
     expect(defaultLyric.props.style).to.deep.equal({
       whiteSpace: 'nowrap',
-      fontSize: '100px',
+      fontSize: '60px',
       color: 'white',
+      textShadow: '-2px 0 black, 0 2px black, 2px 0 black, 0 -2px black',
     });
 
     expect(activeLyric.type).to.equal('div');
     expect(activeLyric.props.children).to.equal('Test');
     expect(activeLyric.props.style).to.deep.equal({
       whiteSpace: 'nowrap',
-      fontSize: '100px',
+      fontSize: '60px',
       position: 'absolute',
       left: 0,
       top: 0,
@@ -51,6 +52,7 @@ describe('KaraokeLyric', () => {
       overflow: 'hidden',
       zIndex: 1,
       width: '80%',
+      textShadow: '-2px 0 white, 0 2px white, 2px 0 white, 0 -2px white'
     });
   });
 
@@ -86,8 +88,9 @@ describe('KaraokeLyric', () => {
     expect(defaultLyric.props.children).to.equal('Test');
     expect(defaultLyric.props.style).to.deep.equal({
       whiteSpace: 'nowrap',
-      fontSize: '100px',
+      fontSize: '60px',
       color: 'red',
+      textShadow: '-2px 0 black, 0 2px black, 2px 0 black, 0 -2px black',
     });
   });
 
@@ -106,7 +109,7 @@ describe('KaraokeLyric', () => {
     expect(activeLyric.props.children).to.equal('Test');
     expect(activeLyric.props.style).to.deep.equal({
       whiteSpace: 'nowrap',
-      fontSize: '100px',
+      fontSize: '60px',
       position: 'absolute',
       left: 0,
       top: 0,
@@ -114,6 +117,7 @@ describe('KaraokeLyric', () => {
       zIndex: 1,
       width: '80%',
       color: 'red',
+      textShadow: '-2px 0 white, 0 2px white, 2px 0 white, 0 -2px white',
     });
   });
 });

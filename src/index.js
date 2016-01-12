@@ -7,8 +7,9 @@ const defaultWrapperStyle = {
 
 const defaultFontStyle = {
   whiteSpace: 'nowrap',
-  fontSize: '100px',
+  fontSize: '60px',
   color: 'white',
+  textShadow: '-2px 0 black, 0 2px black, 2px 0 black, 0 -2px black',
 };
 
 const defaultActiveStyle = {
@@ -19,6 +20,7 @@ const defaultActiveStyle = {
   color: 'blue',
   overflow: 'hidden',
   zIndex: 1,
+  textShadow: '-2px 0 white, 0 2px white, 2px 0 white, 0 -2px white',
 };
 
 export default class KaraokeLyric extends Component {
