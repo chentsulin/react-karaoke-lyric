@@ -1,6 +1,6 @@
 {
   "name": "react-karaoke-lyric",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Display karaoke lyric progress via React",
   "main": "lib/index.js",
   "license": "MIT",
