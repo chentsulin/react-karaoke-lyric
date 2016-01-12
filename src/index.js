@@ -8,6 +8,7 @@ const defaultWrapperStyle = {
 const defaultFontStyle = {
   whiteSpace: 'nowrap',
   fontSize: '100px',
+  color: 'white',
 };
 
 const defaultActiveStyle = {

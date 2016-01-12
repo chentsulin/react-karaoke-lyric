@@ -36,6 +36,7 @@ describe('KaraokeLyric', () => {
     expect(defaultLyric.props.style).to.deep.equal({
       whiteSpace: 'nowrap',
       fontSize: '100px',
+      color: 'white',
     });
 
     expect(activeLyric.type).to.equal('div');
