@@ -6,7 +6,14 @@ class App extends Component {
   render() {
     return (
       <div>
-        <KaraokeLyric text="Hello World" percentage={80} />
+        <div>
+          <KaraokeLyric text="Hello World" percentage={80} />
+        </div>
+        <div>
+          <KaraokeLyric text="Hello World" percentage={35} activeStyle={{
+            color: '#e50906',
+          }} />
+        </div>
       </div>
     );
   }
