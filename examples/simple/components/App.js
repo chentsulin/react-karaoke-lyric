@@ -12,7 +12,8 @@ class App extends Component {
         <div>
           <KaraokeLyric text="Hello World" percentage={35} activeStyle={{
             color: '#e50906',
-          }} />
+          }}
+          />
         </div>
       </div>
     );

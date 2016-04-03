@@ -9,18 +9,18 @@ function setup(props) {
   const output = renderer.getRenderOutput();
 
   return {
-    props: props,
-    output: output,
-    renderer: renderer
+    props,
+    output,
+    renderer,
   };
 }
 
 
 describe('KaraokeLyric', () => {
   it('should render default style correctly', () => {
-  	const { output } = setup({
+    const { output } = setup({
       text: 'Test',
-      percentage: 80
+      percentage: 80,
     });
 
     expect(output.type).to.equal('div');
@@ -29,7 +29,7 @@ describe('KaraokeLyric', () => {
       display: 'inline-block',
     });
 
-    const [ defaultLyric, activeLyric ] = output.props.children;
+    const [defaultLyric, activeLyric] = output.props.children;
 
     expect(defaultLyric.type).to.equal('div');
     expect(defaultLyric.props.children).to.equal('Test');
@@ -52,7 +52,7 @@ describe('KaraokeLyric', () => {
       overflow: 'hidden',
       zIndex: 1,
       width: '80%',
-      textShadow: '-2px 0 white, 0 2px white, 2px 0 white, 0 -2px white'
+      textShadow: '-2px 0 white, 0 2px white, 2px 0 white, 0 -2px white',
     });
   });
 
@@ -82,7 +82,7 @@ describe('KaraokeLyric', () => {
       },
     });
 
-    const [ defaultLyric, _ ] = output.props.children;
+    const [defaultLyric] = output.props.children;
 
     expect(defaultLyric.type).to.equal('div');
     expect(defaultLyric.props.children).to.equal('Test');
@@ -103,7 +103,7 @@ describe('KaraokeLyric', () => {
       },
     });
 
-    const [ _, activeLyric ] = output.props.children;
+    const [, activeLyric] = output.props.children;
 
     expect(activeLyric.type).to.equal('div');
     expect(activeLyric.props.children).to.equal('Test');

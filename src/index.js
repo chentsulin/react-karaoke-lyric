@@ -47,10 +47,10 @@ export default class KaraokeLyric extends Component {
     activeStyle = activeStyle ? {
       ...defaultActiveStyle,
       ...activeStyle,
-      width: percentage + '%',
+      width: `${percentage}%`,
     } : {
       ...defaultActiveStyle,
-      width: percentage + '%',
+      width: `${percentage}%`,
     };
 
     return (
