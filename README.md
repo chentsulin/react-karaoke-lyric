@@ -79,4 +79,3 @@ MIT © [C.T. Lin](https://github.com/chentsulin/react-karaoke-lyric)
 [coveralls-url]: https://coveralls.io/r/chentsulin/react-karaoke-lyric?branch=master
 [david_img]: https://david-dm.org/chentsulin/react-karaoke-lyric.svg
 [david_site]: https://david-dm.org/chentsulin/react-karaoke-lyric
-

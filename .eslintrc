@@ -6,7 +6,7 @@
     "node": true
   },
   "rules": {
-
+    "react/"
   },
   "plugins": [
     "react"
