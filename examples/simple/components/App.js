@@ -7,10 +7,10 @@ class App extends Component {
     return (
       <div>
         <div>
-          <KaraokeLyric text="Hello World" percentage={80} />
+          <KaraokeLyric text="Try Everything" percentage={80} />
         </div>
         <div>
-          <KaraokeLyric text="Hello World" percentage={35} activeStyle={{
+          <KaraokeLyric text="你目光獨有的溫暖" percentage={35} activeStyle={{
             color: '#e50906',
           }}
           />
