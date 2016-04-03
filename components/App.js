@@ -5,12 +5,12 @@ import './App.css';
 
 const code1 =
 `
-<KaraokeLyric text="Hello world" percentage="80" />
+<KaraokeLyric text="Try Everything" percentage="80" />
 `;
 
 const code2 =
 `
-<KaraokeLyric text="Hello World" percentage={35} activeStyle={{
+<KaraokeLyric text="你目光獨有的溫暖" percentage={35} activeStyle={{
   color: '#e50906',
 }} />
 `;
@@ -20,11 +20,11 @@ function App() {
     <div>
       <CodeDisplay code={code1} />
       <div>
-        <KaraokeLyric text="Hello world" percentage="80" />
+        <KaraokeLyric text="Try Everything" percentage="80" />
       </div>
       <CodeDisplay code={code2} />
       <div>
-        <KaraokeLyric text="Hello World" percentage={35} activeStyle={{
+        <KaraokeLyric text="你目光獨有的溫暖" percentage={35} activeStyle={{
           color: '#e50906',
         }}
         />
