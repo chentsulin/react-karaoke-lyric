@@ -7,7 +7,9 @@
 
 > Display karaoke lyric progress via React
 
-![lyric](https://cloud.githubusercontent.com/assets/3382565/21337369/8dcb93d0-c6a7-11e6-820a-e29729de4751.png)
+![lyric1](https://cloud.githubusercontent.com/assets/3382565/21341782/392446f2-c6c9-11e6-8313-c484fb6a425a.png)
+
+![lyric2](https://cloud.githubusercontent.com/assets/3382565/21337369/8dcb93d0-c6a7-11e6-820a-e29729de4751.png)
 
 ## Install
 
