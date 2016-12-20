@@ -7,13 +7,13 @@
 
 > Display karaoke lyric progress via React
 
+![lyric](https://cloud.githubusercontent.com/assets/3382565/21337369/8dcb93d0-c6a7-11e6-820a-e29729de4751.png)
 
 ## Install
 
 ```
 $ npm install react-karaoke-lyric
 ```
-
 
 ## Usage
 
