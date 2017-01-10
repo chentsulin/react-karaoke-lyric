@@ -54,7 +54,7 @@
     "isparta": "4.0.0",
     "mocha": "*",
     "react": "^0.14.8",
-    "react-addons-test-utils": "^0.14.8",
+    "react-addons-test-utils": "^15.4.2",
     "rimraf": "^2.5.2",
     "webpack": "^1.12.14"
   },
