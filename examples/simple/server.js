@@ -1,7 +1,8 @@
-/* eslint no-var: 0, prefer-arrow-callback: 0 */
-var webpack = require('webpack');
-var WebpackDevServer = require('webpack-dev-server');
-var config = require('./webpack.config');
+/* eslint-disable no-console, import/no-extraneous-dependencies */
+const webpack = require('webpack');
+const WebpackDevServer = require('webpack-dev-server');
+
+const config = require('./webpack.config');
 
 new WebpackDevServer(webpack(config), {
   publicPath: config.output.publicPath,
@@ -10,10 +11,10 @@ new WebpackDevServer(webpack(config), {
   stats: {
     colors: true,
   },
-}).listen(3000, 'localhost', function (err) {
+}).listen(3000, 'localhost', err => {
   if (err) {
-    console.log(err); // eslint-disable-line no-console
+    console.log(err);
   }
 
-  console.log('Listening at localhost:3000'); // eslint-disable-line no-console
+  console.log('Listening at localhost:3000');
 });

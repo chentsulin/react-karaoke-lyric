@@ -20,13 +20,13 @@ $ npm install react-karaoke-lyric
 ## Usage
 
 ```js
-var KaraokeLyric = require('react-karaoke-lyric');
+var { PercentageKaraokeLyric } = require('react-karaoke-lyric');
 
 // Blue
-<KaraokeLyric text="Hello world" percentage="80" />
+<PercentageKaraokeLyric text="Hello world" percentage="80" />
 
 // Red
-<KaraokeLyric text="Hello World" percentage={35} activeStyle={{
+<PercentageKaraokeLyric text="Hello World" percentage={35} activeStyle={{
   color: '#e50906',
 }} />
 ```

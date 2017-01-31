@@ -1,10 +1,3 @@
-# 0.1.0 (2016/x/x)
-
-#### Features
-
-- **A:**
-- **B:**
-
-#### Bugs Fixed
-
-- **C:**
+0.3.0 / 2017-01-31
+==================
+- [changed] rename original `KaraokeLyric` to `PercentageKaraokeLyric`

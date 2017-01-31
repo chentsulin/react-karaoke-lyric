@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import KaraokeLyric from 'react-karaoke-lyric';
+import { PercentageKaraokeLyric } from 'react-karaoke-lyric'; // eslint-disable-line
 
 
 class App extends Component {
@@ -7,12 +7,15 @@ class App extends Component {
     return (
       <div>
         <div>
-          <KaraokeLyric text="Try Everything" percentage={80} />
+          <PercentageKaraokeLyric text="Try Everything" percentage={80} />
         </div>
         <div>
-          <KaraokeLyric text="你目光獨有的溫暖" percentage={35} activeStyle={{
-            color: '#e50906',
-          }}
+          <PercentageKaraokeLyric
+            text="你目光獨有的溫暖"
+            percentage={35}
+            activeStyle={{
+              color: '#e50906',
+            }}
           />
         </div>
       </div>
