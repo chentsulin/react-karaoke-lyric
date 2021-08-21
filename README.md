@@ -1,8 +1,8 @@
 # react-karaoke-lyric
 
-[![NPM version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Test coverage][coveralls-image]][coveralls-url]
+[![npm version](https://badge.fury.io/js/react-karaoke-lyric.svg)](https://npmjs.org/package/react-karaoke-lyric)
+[![Build Status](https://github.com/chentsulin/react-karaoke-lyric/workflows/CI/badge.svg?branch=master)](https://github.com/chentsulin/react-karaoke-lyric/actions?query=branch%3Amaster)
+[![Coverage Status](https://coveralls.io/repos/github/chentsulin/react-karaoke-lyric/badge.svg?branch=master)](https://coveralls.io/r/chentsulin/koa-bearer-token?branch=master)
 
 > Display karaoke lyric progress via React
 
@@ -69,11 +69,3 @@ Custom active style.
 ## License
 
 MIT © [C.T. Lin](https://github.com/chentsulin/react-karaoke-lyric)
-
-[npm-image]: https://badge.fury.io/js/react-karaoke-lyric.svg
-[npm-url]: https://npmjs.org/package/react-karaoke-lyric
-[travis-image]: https://travis-ci.org/chentsulin/react-karaoke-lyric.svg
-[travis-url]: https://travis-ci.org/chentsulin/react-karaoke-lyric
-[coveralls-image]: https://coveralls.io/repos/chentsulin/react-karaoke-lyric/badge.svg?branch=master&service=github
-[coveralls-url]: https://coveralls.io/r/chentsulin/react-karaoke-lyric?branch=master
-
