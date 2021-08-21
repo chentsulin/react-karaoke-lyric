@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 const defaultWrapperStyle = {
   position: 'relative',
@@ -24,14 +25,6 @@ const defaultActiveStyle = {
 };
 
 export default class KaraokeLyric extends Component {
-  static propTypes = {
-    text: PropTypes.string.isRequired,
-    percentage: PropTypes.number.isRequired,
-    fontStyle: PropTypes.object,
-    activeStyle: PropTypes.object,
-    wrapperStyle: PropTypes.object,
-  }
-
   render() {
     const { percentage, text } = this.props;
     let { wrapperStyle, fontStyle, activeStyle } = this.props;
@@ -62,3 +55,10 @@ export default class KaraokeLyric extends Component {
   }
 }
 
+KaraokeLyric.propTypes = {
+  text: PropTypes.string.isRequired,
+  percentage: PropTypes.number.isRequired,
+  fontStyle: PropTypes.object,
+  activeStyle: PropTypes.object,
+  wrapperStyle: PropTypes.object,
+};

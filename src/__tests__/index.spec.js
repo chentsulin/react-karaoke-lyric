@@ -1,10 +1,10 @@
 import React from 'react';
-import { expect } from 'chai';
-import { createRenderer } from 'react-addons-test-utils';
-import KaraokeLyric from '../src';
+import ShallowRenderer from 'react-test-renderer/shallow';
+
+import KaraokeLyric from '..';
 
 function setup(props) {
-  const renderer = createRenderer();
+  const renderer = new ShallowRenderer();
   renderer.render(<KaraokeLyric {...props} />);
   const output = renderer.getRenderOutput();
 
@@ -15,7 +15,6 @@ function setup(props) {
   };
 }
 
-
 describe('KaraokeLyric', () => {
   it('should render default style correctly', () => {
     const { output } = setup({
@@ -23,26 +22,26 @@ describe('KaraokeLyric', () => {
       percentage: 80,
     });
 
-    expect(output.type).to.equal('div');
-    expect(output.props.style).to.deep.equal({
+    expect(output.type).toBe('div');
+    expect(output.props.style).toEqual({
       position: 'relative',
       display: 'inline-block',
     });
 
     const [defaultLyric, activeLyric] = output.props.children;
 
-    expect(defaultLyric.type).to.equal('div');
-    expect(defaultLyric.props.children).to.equal('Test');
-    expect(defaultLyric.props.style).to.deep.equal({
+    expect(defaultLyric.type).toBe('div');
+    expect(defaultLyric.props.children).toBe('Test');
+    expect(defaultLyric.props.style).toEqual({
       whiteSpace: 'nowrap',
       fontSize: '60px',
       color: 'white',
       textShadow: '-2px 0 black, 0 2px black, 2px 0 black, 0 -2px black',
     });
 
-    expect(activeLyric.type).to.equal('div');
-    expect(activeLyric.props.children).to.equal('Test');
-    expect(activeLyric.props.style).to.deep.equal({
+    expect(activeLyric.type).toBe('div');
+    expect(activeLyric.props.children).toBe('Test');
+    expect(activeLyric.props.style).toEqual({
       whiteSpace: 'nowrap',
       fontSize: '60px',
       position: 'absolute',
@@ -65,8 +64,8 @@ describe('KaraokeLyric', () => {
       },
     });
 
-    expect(output.type).to.equal('div');
-    expect(output.props.style).to.deep.equal({
+    expect(output.type).toBe('div');
+    expect(output.props.style).toEqual({
       position: 'relative',
       display: 'inline-block',
       lineHeight: '2em',
@@ -84,9 +83,9 @@ describe('KaraokeLyric', () => {
 
     const [defaultLyric] = output.props.children;
 
-    expect(defaultLyric.type).to.equal('div');
-    expect(defaultLyric.props.children).to.equal('Test');
-    expect(defaultLyric.props.style).to.deep.equal({
+    expect(defaultLyric.type).toBe('div');
+    expect(defaultLyric.props.children).toBe('Test');
+    expect(defaultLyric.props.style).toEqual({
       whiteSpace: 'nowrap',
       fontSize: '60px',
       color: 'red',
@@ -105,9 +104,9 @@ describe('KaraokeLyric', () => {
 
     const [, activeLyric] = output.props.children;
 
-    expect(activeLyric.type).to.equal('div');
-    expect(activeLyric.props.children).to.equal('Test');
-    expect(activeLyric.props.style).to.deep.equal({
+    expect(activeLyric.type).toBe('div');
+    expect(activeLyric.props.children).toBe('Test');
+    expect(activeLyric.props.style).toEqual({
       whiteSpace: 'nowrap',
       fontSize: '60px',
       position: 'absolute',
