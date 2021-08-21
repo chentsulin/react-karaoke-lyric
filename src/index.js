@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 const defaultWrapperStyle = {
@@ -24,41 +24,39 @@ const defaultActiveStyle = {
   textShadow: '-2px 0 white, 0 2px white, 2px 0 white, 0 -2px white',
 };
 
-export default class KaraokeLyric extends Component {
-  render() {
-    const { percentage, text } = this.props;
-    let { wrapperStyle, fontStyle, activeStyle } = this.props;
+export default function KaraokeLyric(props) {
+  const { percentage, text } = props;
+  let { wrapperStyle, fontStyle, activeStyle } = props;
 
-    wrapperStyle = wrapperStyle
-      ? {
-          ...defaultWrapperStyle,
-          ...wrapperStyle,
-        }
-      : defaultWrapperStyle;
-    fontStyle = fontStyle
-      ? {
-          ...defaultFontStyle,
-          ...fontStyle,
-        }
-      : defaultFontStyle;
-    activeStyle = activeStyle
-      ? {
-          ...defaultActiveStyle,
-          ...activeStyle,
-          width: `${percentage}%`,
-        }
-      : {
-          ...defaultActiveStyle,
-          width: `${percentage}%`,
-        };
+  wrapperStyle = wrapperStyle
+    ? {
+        ...defaultWrapperStyle,
+        ...wrapperStyle,
+      }
+    : defaultWrapperStyle;
+  fontStyle = fontStyle
+    ? {
+        ...defaultFontStyle,
+        ...fontStyle,
+      }
+    : defaultFontStyle;
+  activeStyle = activeStyle
+    ? {
+        ...defaultActiveStyle,
+        ...activeStyle,
+        width: `${percentage}%`,
+      }
+    : {
+        ...defaultActiveStyle,
+        width: `${percentage}%`,
+      };
 
-    return (
-      <div style={wrapperStyle}>
-        <div style={fontStyle}>{text}</div>
-        <div style={activeStyle}>{text}</div>
-      </div>
-    );
-  }
+  return (
+    <div style={wrapperStyle}>
+      <div style={fontStyle}>{text}</div>
+      <div style={activeStyle}>{text}</div>
+    </div>
+  );
 }
 
 KaraokeLyric.propTypes = {
