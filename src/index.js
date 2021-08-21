@@ -29,22 +29,28 @@ export default class KaraokeLyric extends Component {
     const { percentage, text } = this.props;
     let { wrapperStyle, fontStyle, activeStyle } = this.props;
 
-    wrapperStyle = wrapperStyle ? {
-      ...defaultWrapperStyle,
-      ...wrapperStyle,
-    } : defaultWrapperStyle;
-    fontStyle = fontStyle ? {
-      ...defaultFontStyle,
-      ...fontStyle,
-    } : defaultFontStyle;
-    activeStyle = activeStyle ? {
-      ...defaultActiveStyle,
-      ...activeStyle,
-      width: `${percentage}%`,
-    } : {
-      ...defaultActiveStyle,
-      width: `${percentage}%`,
-    };
+    wrapperStyle = wrapperStyle
+      ? {
+          ...defaultWrapperStyle,
+          ...wrapperStyle,
+        }
+      : defaultWrapperStyle;
+    fontStyle = fontStyle
+      ? {
+          ...defaultFontStyle,
+          ...fontStyle,
+        }
+      : defaultFontStyle;
+    activeStyle = activeStyle
+      ? {
+          ...defaultActiveStyle,
+          ...activeStyle,
+          width: `${percentage}%`,
+        }
+      : {
+          ...defaultActiveStyle,
+          width: `${percentage}%`,
+        };
 
     return (
       <div style={wrapperStyle}>

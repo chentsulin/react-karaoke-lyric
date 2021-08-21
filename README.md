@@ -36,14 +36,14 @@ const KaraokeLyric = require('react-karaoke-lyric');
 
 #### text
 
-*Required*
+_Required_
 Type: `string`
 
 Text be displayed.
 
 #### percentage
 
-*Required*
+_Required_
 Type: `number`
 
 Progress.
