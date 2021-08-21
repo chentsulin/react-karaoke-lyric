@@ -1,3 +1,4 @@
+import React from 'react';
 import KaraokeLyric from 'react-karaoke-lyric';
 
 function App() {
